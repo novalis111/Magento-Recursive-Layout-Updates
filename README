@@ -1,0 +1,19 @@
+#
+# Exanto Reclayup
+#
+This extension fixes the issue that custom XML layout updates are not applied
+to child elements (categories, products) even if the parent is configured to to so.
+
+#
+# Notes
+#
+This module extends the Mage_Catalog_Model_Product and Mage_Catalog_Model_Category Models.
+If you have other extensions doing the same you might get a race condition and have
+to alter your existing modules. To fix this, just put the three methods from my models
+into the conflicting one and delete my extension afterwards.
+
+#
+# Contact
+#
+Exanto Internet Solutions
+http://www.exanto.de/
